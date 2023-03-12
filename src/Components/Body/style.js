@@ -3,13 +3,16 @@ import styled from 'styled-components'
 const Container = styled.div`
     width: 1366px;
     min-height: 100vh;
-    background-color: #222222;
     margin: 0 auto;
     color: white;
     font-family:cursive;
     padding: 20px 40px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 `
 const Wail = styled.div`
+    border-top: 5px solid white;
     width: 70%;
     border-bottom: 10px dotted white;
     padding: 15px 5px;

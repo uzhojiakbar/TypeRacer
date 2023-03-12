@@ -29,9 +29,8 @@ const Body = () => {
         return Pr <= 100 ? Pr : 100
     }
     let text = texts[defaoultText]?.text.split('')
-    console.log(Render_Prasent());
     let setTimer = () => {
-        if (inputData.length &&  Render_Prasent() < 98) {
+        if (inputData.length && Render_Prasent() < 98) {
             setTimeout(() => {
                 setSec(sec + 1)
             }, 1000)
@@ -40,7 +39,7 @@ const Body = () => {
     setTimer()
     return (
         <Container>
-            <Wail>
+            <Wail machineLoc={Render_Prasent} >
                 <div className="info">
                     <div className="score">0</div>
                     <div className="name">Guest <br /> (You) </div>
