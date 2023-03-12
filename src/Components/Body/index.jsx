@@ -17,7 +17,7 @@ const Body = () => {
                 }
             }
         }
-        if (word.length == 0) {
+        if (word.length === 0) {
             gap_count = 0
         }
         return gap_count
